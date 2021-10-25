@@ -10,4 +10,4 @@ PostgreSQL hints
 ``select to_char(now(), 'YYYY-MM-01') as first_day_of_month;``
 
 #### Last day (date) of current month
-``select (date_trunc('month', now()) + interval '1 month' - interval '1 day')::date as last_day_of_next_month;``
+``select (date_trunc('month', now()) + interval '1 month' - interval '1 day')::date as last_day_of_last_month;``
