@@ -12,7 +12,7 @@ PostgreSQL hints
 #### Last day (date) of current month
 ``select (date_trunc('month', now()) + interval '1 month' - interval '1 day')::date as last_day_of_current_month;``
 
-#### Contact String
+#### Concatination String
 ``Ex1 : 'hello' || '_world' => hello_world``
 ``Ex2 : 'John's' || ' is pro.' => John's is pro.``
 ``Ex3 : ''' || 'Jack' || ''' => 'Jack'.``
