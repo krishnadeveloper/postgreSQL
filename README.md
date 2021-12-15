@@ -16,3 +16,6 @@ PostgreSQL hints
 ``Ex1 : 'hello' || '_world' => hello_world``
 ``Ex2 : 'John's' || ' is pro.' => John's is pro.``
 ``Ex3 : ''' || 'Jack' || ''' => 'Jack'.``
+
+#### compare two rows from two table / Detect change between two rows
+``SELECT COALESCE(ta.* != tb.*, false) AS changeDetect, ta.* FROM tableA AS ta RIGHT JOIN tableB AS tb USING (id) where COALESCE(ta.* != tb.*, false) is TRUE; ``
